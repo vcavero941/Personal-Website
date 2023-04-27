@@ -1,0 +1,152 @@
+.home-page {
+  padding-top: 120px;
+  height: 730px;
+  background-color: rgba(58, 134, 157, 0.45);
+  color: rgb(255, 255, 255);
+}
+
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  margin-bottom: 30px;
+}
+
+.about-me {
+  width: 600px;
+  height: 600px;
+}
+
+.intro1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  margin-top: 200px;
+}
+
+.intro2 {
+  font-size: 29px;
+  margin-bottom: 40px;
+  color: rgb(20, 20, 20);
+}
+
+.profile-pic {
+  height: 340px;
+  width: 340px;
+  object-fit: cover;
+  border-radius: 300px;
+  box-shadow: 7px 3px 5px rgba(0, 0, 0, 0.27); 
+  border: 4px solid rgb(255, 250, 250);
+}
+
+.link-container {
+  display: flex;
+  align-items: center;
+}
+
+.left-section{
+  margin-right: 195px;
+}
+
+.resume-button {
+  padding: 12px 38px;
+  background-color: rgb(250, 250, 250);
+  border: none;
+  border-radius: 14px;
+  font-family: Lato;
+  font-size: 17px;
+  transition: background-color 0.15s;
+}
+
+.resume-button:hover {
+  cursor: pointer;
+}
+
+.linkedin-icon:hover, 
+.github-icon:hover, 
+.email-icon:hover {
+  opacity: 0.5;
+  cursor: pointer;
+} 
+
+.linkedin-icon {
+  width: 58px;
+  transition: opacity 0.15s;
+}
+
+.github-icon {
+  width: 39px;
+  border-radius: 8px;
+  margin-right: 10px;
+  transition: opacity 0.15s;
+}
+
+.email-icon {
+  width: 40px;
+  height: 37px;
+  border-radius: 8px;
+  transition: opacity 0.15s;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: -1px;
+  margin-left: -36px;
+}
+
+@media (max-width: 1000px) {
+  .intro1 {
+    font-size: 50px;
+  }
+  .intro2 {
+    font-size: 25px;
+  }
+  .profile-pic {
+    width: 300px;
+    height: 300px;
+  }
+  .left-section{
+    margin-right: 170px;
+  } 
+  .resume-button {
+    padding: 10px 32px;
+    border-radius: 14px;
+    font-size: 15px;
+  }
+  .linkedin-icon {
+    width: 51px;
+  }
+  .github-icon {
+    width: 34px;
+    border-radius: 8px;
+    margin-right: 10px;
+  }
+  .email-icon {
+    width: 34px;
+    height: 33px;
+    border-radius: 8px;
+  }
+  .right-section {
+    margin-top: -1px;
+    margin-left: -36px;
+  }
+}
+
+@media (max-width: 750px) {
+  .home-container{
+    flex-direction: column-reverse;
+  }
+  .profile-pic{
+    margin-top: 30px;
+    width: 250px;
+    height: 250px;
+  }
+  .about-me{
+    margin-top: -80px;
+    margin-left: 200px;
+  }
+  .home-page .down-arrow {
+    margin-top: -190px;
+  }
+}
